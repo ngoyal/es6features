@@ -145,6 +145,10 @@ g({name: 5})
 // Fail-soft destructuring
 var [a] = [];
 a === undefined;
+
+// Fail-soft destructuring with defaults
+var [a = 1] = [];
+a === 1;
 ```
 
 ### Default + Rest + Spread
@@ -534,7 +538,7 @@ Object.assign(Point, { origin: new Point(0,0) })
 ```
 
 ### Binary and Octal Literals
-Two new numeric literal forms are addded for binary (`b`) and octal (`o`).
+Two new numeric literal forms are added for binary (`b`) and octal (`o`).
 
 ```JavaScript
 0b111110111 === 503 // true
